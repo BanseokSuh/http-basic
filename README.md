@@ -73,5 +73,5 @@
   - host - 도메인명, ip
   - port - 생략 가능
   - path - 리소스 경로, 계층적 구조
-  - query
-  - fragment
+  - query - key:value의 형태, ?로 시작, &로 추가 가능, '쿼리 파라미터' 혹은 '쿼리 스트링'으로 불림
+  - fragment - html 내부 북마크
