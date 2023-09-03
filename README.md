@@ -62,4 +62,16 @@
 
 <br>
 
-##
+## URI
+
+- Uniform Resource Identifier
+- URI, URL, URN
+- URL(Locator), URN(Name)은 URI(Identifier)에 포함된다.
+- scheme://[userinfo@]host[:port][/path][?query][#fragment]
+  - scheme - protocol
+  - userinfo - 사용자 정보 포함해서 인증 (거의 사용하지 않음)
+  - host - 도메인명, ip
+  - port - 생략 가능
+  - path - 리소스 경로, 계층적 구조
+  - query
+  - fragment
