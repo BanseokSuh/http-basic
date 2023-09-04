@@ -92,4 +92,41 @@
 - HyperText Transfer Protocol
 - http/1.1, http/2는 tcp 기반
 - http/3은 udp 기반
-- 
+- client - server 구조
+
+### 무상태 프로토콜
+- 서버가 클라이언트의 상태를 보존하지 않음
+- 보통은 무상태. 사용자 세션 같은 경우에는 stateful하게.
+- 단점: 요청 시 데이터를 너무 많이 보냄
+
+### 비연결성
+- 기본이 연결을 유지하지 않음
+- 수천명이 사용해도 실제 서버에서 처리되는 요청은 수십개 내외
+- 매 요청 시 3way handshake 추가
+- 현재는 http 지속 연결로 해소됨
+  - 연결 > 요청-html 응답 > 요청-js 응답 > 요청-css 응답 > 종료
+- 같은 시간에 딱 발생하는 대용량 트래픽
+  - ex) 선착순 이벤트, 명절 기차표 끊기 -> 수만명 동시 요청
+  - 보통 정적 페이지를 먼저 하나 띄워서 사용자들이 시간을 보내게 함으로써 요청을 약간은 분산시킨다.
+
+### Http 메시지
+- http 헤더에서 key값은 대소문자를 구분하지 않음 (value는 구분)
+
+<br>
+
+## Http API
+
+### uri 설계 (bad)
+- 회원 목록 조회: read-member-list
+- 회원 조회: read-member-by-id
+- 회원 등록: create-member
+- 회원 수정: update-member
+- 회원 삭제: delete-member
+
+### uri 설계 (good)
+- 리소스와 행위를 분리
+- 회원 목록 조회: GET  /members
+- 회원 조회: GET  /member/{id}
+- 회원 등록: POST  /member/{id}
+- 회원 수정: PUT  /member/{id}
+- 회원 삭제: DELETE  /member/{id}
