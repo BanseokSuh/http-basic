@@ -88,4 +88,8 @@
 
 <br>
 
-
+## HTTP
+- HyperText Transfer Protocol
+- http/1.1, http/2는 tcp 기반
+- http/3은 udp 기반
+- 
