@@ -130,3 +130,15 @@
 - 회원 등록: POST  /member/{id}
 - 회원 수정: PUT  /member/{id}
 - 회원 삭제: DELETE  /member/{id}
+
+### Http 메서드
+- GET: 조회
+- POST: 데이터 처리, 등록
+- PUT: 대체
+- PATCH: 수정
+- DELETE: 삭제
+- HEAD: GET과 동일하지만 메시지 제외하고 상태, 헤더만 리
+- OPTION: 통신 가능 여부 (CORS)
+- CONNECT: 서버에 대한 터널 설정 (?)
+- TRACE: 메시지 루프백 테스트 수행 (?)
+
