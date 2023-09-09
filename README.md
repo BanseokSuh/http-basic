@@ -198,6 +198,24 @@
     - 조회 조건을 줄여주는 필터, 정렬 조건
     - GET 메서드 사용
   - 3_html form을 통한 데이터 전송
+    - post 요청
+      - form 태그에 action은 url, method는 메서드 입력
+      - form 태그 안의 input 태그의 name에 전송 데이터 이름 입력
+      - button 태그의 type에 submit 입력
+      - http 메시지에는 content-type: application/x-www-form-urlencoded 헤더로 생성됨
+        - 전송 데이터를 url encoding 처리해서 보냄
+      - 회원가입, 상품 주문, 데이터 변경 시 사용
+    - get 요청
+      - 전송 데이터를 메시지 바디가 아니라 쿼리 파라미터로 넘겨버림
+    - enctype="multipart/form-data"
+      - 파일 업로드 같은 바이너리 데이터 전송 시 form 태그에 사용
+      - 다른 종류의 여러 파일과 데이터를 함께 보낼 수 있음 -> multipart
+    - get, post만 지원
   - 4_html api를 통한 데이터 전송
 - http api
-  - s
+  - content-type: application/json
+  - 서버 to 서버 통신
+  - 앱 클라이언트에서 사용
+  - 웹 클라이언트 (리액트, 뷰 등)
+  - json을 통한 데이터 전송 (json이 표준)
+  - 
