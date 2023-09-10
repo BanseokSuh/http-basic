@@ -218,4 +218,36 @@
   - 앱 클라이언트에서 사용
   - 웹 클라이언트 (리액트, 뷰 등)
   - json을 통한 데이터 전송 (json이 표준)
-  - 
+
+### Http api 설계
+- http api (컬렉션)
+  - uri는 리소스를 식별해야 한다.
+    - 회원 목록 조회: GET  /members
+    - 회원 조회: GET  /member/{id}
+    - 회원 등록: POST  /member/{id}
+    - 회원 수정: PUT  /member/{id}
+      - 보통은 patch를 사용한다.
+    - 회원 삭제: DELETE  /member/{id}
+  - 클라이언트는 등록될 리소스의 uri를 모름
+  - 서버가 새로 등록해줌
+  - 컬렉션
+    - 서버가 관리하는 리소스 디렉토리
+    - 서버가 리소스의 uri를 생성하고 관리
+    - 여기서 컬렉션은 /members
+- http api (스토어)
+
+[//]: # (  - 회원 목록 조회: GET  /members)
+
+[//]: # (  - 회원 조회: GET  /member/{id})
+
+[//]: # (  - 회원 등록: POST  /member/{id})
+
+[//]: # (  - 회원 수정: PUT  /member/{id})
+
+[//]: # (    - 보통은 patch를 사용한다.)
+
+[//]: # (  - 회원 삭제: DELETE  /member/{id})
+- html form 
+
+
+- 
