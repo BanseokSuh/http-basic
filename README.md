@@ -235,19 +235,16 @@
     - 서버가 리소스의 uri를 생성하고 관리
     - 여기서 컬렉션은 /members
 - http api (스토어)
-
-[//]: # (  - 회원 목록 조회: GET  /members)
-
-[//]: # (  - 회원 조회: GET  /member/{id})
-
-[//]: # (  - 회원 등록: POST  /member/{id})
-
-[//]: # (  - 회원 수정: PUT  /member/{id})
-
-[//]: # (    - 보통은 patch를 사용한다.)
-
-[//]: # (  - 회원 삭제: DELETE  /member/{id})
-- html form 
-
-
-- 
+  - 파일 목록: /files -> GET
+  - 파일 조회: /files/{filename} -> GET  
+  - 파일 등록: /files/{filename} -> PUT
+  - 파일 삭제: /files/{filename} -> DELETE 
+  - 파일 대량 등록: /files -> POST
+  - PUT을 사용했다는 것에 주목
+    - 클라이언트가 리소스 URI를 알고 있다.
+    - POST 요청시와 다른 점이 이 부분.
+    - POST는 클라이언트가 URI를 알지 못함.
+    - 대부분은 POST 기반의 URI를 사용.
+- html form (순수 html form) 
+  - GET, POST만 지원함
+  - 
