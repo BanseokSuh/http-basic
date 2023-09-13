@@ -247,4 +247,10 @@
     - 대부분은 POST 기반의 URI를 사용.
 - html form (순수 html form) 
   - GET, POST만 지원함
-  - 
+  - 회원 목록 조회: GET  /members
+  - 회원 등록 폼: GET  /members/new
+  - 회원 등록: POST  /members/new, /members
+  - 회원 조회: GET  /members/{id}
+  - 회원 수정 폼: GET  /members/{id}/edit
+  - 회원 수정: POST  /members/{id}/edit, /members/{id}
+  - 회원 삭제: POST  /members/{id}/delete
