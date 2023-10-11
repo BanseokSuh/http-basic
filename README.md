@@ -296,7 +296,18 @@
     - 304 Not Modified
     - 캐시를 목적으로, 클라이언트에게 리소스가 수정되지 않았음을 알려줌.
 - 4xx: 클라이언트 오류
+  - 여러 번 요청해도 실패
+  - 400 Bad Request
+  - 401 Unauthorized: 인증되지 않음
+    - 인증(Authentication): 본인이 누구인지 확인 (로그인)
+    - 인가(Authorization): 권한 부여
+  - 403 Forbidden: 서버가 요청을 이해했지만, 승인 거부
+  - 404 Not Found: 리소스가 없음
 - 5xx: 서버 오류
+  - 여러 번 요청해도, 서버가 복구되면 성공
+  - 500 Internal Server Error
+  - 503 Service Unavailable: 서비스 이용 불가.
+  - 왠만하면 500대 에러를 만들면 안 됨. 
 
 
 
