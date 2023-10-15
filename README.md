@@ -315,6 +315,19 @@
 - 필요시 임의 헤더 추가 가능
 - 표현 헤더 + 표현 데이터 (메시지 바디)
 
+- 표현
+  - Content-Type
+    - 표현 데이터의 형식
+    - ex) text/html; charset=utf-8, application/json
+  - Content-Encoding
+    - 표현 데이터의 압축 방식
+    - 전달하는 쪽에서 압축 후 인코딩 헤더 추가
+    - 읽는 쪽에서 인코딩 헤더 정보로 압축 해제
+    - ex) gzip, deflate, identity
+  - Content-Language: 표현 데이터의 자연 언어
+    - ex) ko, en, en-US
+  - Content-Length: 표현 데이터의 길이
+    - 바이트 단위
 
 
 
