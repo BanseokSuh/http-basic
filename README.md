@@ -315,7 +315,7 @@
 - 필요시 임의 헤더 추가 가능
 - 표현 헤더 + 표현 데이터 (메시지 바디)
 
-- 표현
+- 표현 헤더
   - Content-Type
     - 표현 데이터의 형식
     - ex) text/html; charset=utf-8, application/json
@@ -329,13 +329,21 @@
   - Content-Length: 표현 데이터의 길이
     - 바이트 단위
 
+- 협상 헤더(콘텐트 네고시에이션) - 요청 시에만 사용
+  - Accept: 클라이언트가 선호하는 미디어 타입 전달
+  - Accept-Charset: 클라가 선호하는 문자 인코딩
+  - Accept-Encoding: 클라가 선호하는 압축 인코딩
+  - Accept-Language: 클라가 선호하는 자연 언어
+  - 우선순위
+    - 위해 q(Quality Values)를 사용함
+      - 1이 가장 높음, 0이 가장 낮음, 생략하면 1
+    - 헤더가 구체적일수록 우선순위가 높음
 
-
 <br>
 <br>
 <br>
 <br>
-<br>
+<br>상
 <br>
 <br>
 <br>
