@@ -339,11 +339,17 @@
       - 1이 가장 높음, 0이 가장 낮음, 생략하면 1
     - 헤더가 구체적일수록 우선순위가 높음
 
+### 전송 방식
+- 단순 전송: 한 번에 요청하고 한 번에 받는 전송
+- 압축 전송: response header에 Content-Encoding 값을 넣어줘야 함
+- 분할 전송: response header에 Transfer-Encoding 값을 넣어줘야 함, 큰 용량의 데이터를 분할해서 전송, Content-Length를 주면 안 됨
+- 범위 전송: 요청을 중간에 받다가 중지되었을 경우, 처음부터 받지 않고 범위를 지정해서 요청하는 방식
+
 <br>
 <br>
 <br>
 <br>
-<br>상
+<br>
 <br>
 <br>
 <br>
