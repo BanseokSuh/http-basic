@@ -365,6 +365,11 @@
 - Retry-After
   - 503 응답 반환 시 서비스가 언제까지 불능인지 알려주는 헤더
 
+### 인증
+- Authorization: 클라이언트 인증 정보를 서버에 전달
+- WWW-Authenticate
+  - 401 Unauthorized 응답 시, 필요한 인증 방법 정의하여 헤더에 사용
+
 
 <br>
 <br>
