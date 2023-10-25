@@ -441,6 +441,15 @@
 - 클라이언트는 캐시 메커니즘을 모름
 
 
+### 캐시 제어 헤더
+- Cache-Control
+  - max-age: 캐시 유효 시간, 초 단위
+  - no-cache: 캐시해도 되지만, 항상 origin 서버에 검증하고 사용
+  - no-store: 데이터에 민감한 정보가 있으므로 저장하면 안됨
+- Pragma, Expires는 cache-control의 하위호환
+
+
+- ### 
 
 <br>
 <br>
