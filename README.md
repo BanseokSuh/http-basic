@@ -449,7 +449,17 @@
 - Pragma, Expires는 cache-control의 하위호환
 
 
-- ### 
+### 프록시 캐시
+- aws의 cdn이 대표적
+- Cache-Control
+  - public: 응답이 public 캐시에 저장되어도 됨
+  - private: 해당 사용자만을 위한 응답이기에 private 캐시에 저장해야 함 (기본값)
+  - s-maxage: 프록시 캐시에만 적용되는 max-age
+- Age: 오리진 서버에서 응답 후 프록시 캐시 내에 머문 시간
+
+
+### 캐시 무효화
+
 
 <br>
 <br>
